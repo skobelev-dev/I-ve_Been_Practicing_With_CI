@@ -36,19 +36,19 @@ black:
     - main_tag
     
   script:
-    - black --check --diff .
+    - python -m black --check --diff .
 
 mypy:
   tags:
     - main_tag
     
   script:
-    - mypy .
+    - python -m mypy .
 
 flake8:
   tags:
     - main_tag
     
   script:
-    - flake8 .
+    - python -m flake8 .
 
