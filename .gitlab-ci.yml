@@ -8,7 +8,13 @@ image: python:latest
 
 before_script:
   - python --version  # For debugging  
-  - pip install -r requirements.txt   
+  - pip install -r requirements.txt
+  - pip install black
+  - pip install isort
+  - pip install mypy
+  - pip install flake8
+  - pip install flake8-bugBear
+  - pip install flake8-pie
 
 
 test:
