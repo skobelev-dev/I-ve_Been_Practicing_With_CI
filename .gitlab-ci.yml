@@ -12,22 +12,37 @@ before_script:
 
 
 test:
+  tags:
+    - main_tag
+
   script:
     - pytest test_main
 
 isort:
+  tags:
+    - main_tag
+
   script:
     - isorb --check-only --diff .
 
 black:
+  tags:
+    - main_tag
+    
   script:
     - black --check --diff .
 
 mypy:
+  tags:
+    - main_tag
+    
   script:
     - mypy .
 
 flake8:
+  tags:
+    - main_tag
+    
   script:
     - flake8 .
 
