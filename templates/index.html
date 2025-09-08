@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Recipes
+    </title>
+    <link href="{{ url_for('static', path='style.css') }}" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<h1>Recipes:</h1>
+
+{% if recipes %}
+<table class="customTable">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Views</th>
+        <th>Cooking time</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for recipe in recipes %}
+    <tr>
+        <td>
+            {{ recipe.id }}
+        </td>
+        <td>
+            {{ recipe.tittle }}
+        </td>
+        <td>
+            {{ recipe.views }}
+        </td>
+        <td>
+            {{ recipe.cooking_time }}
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<h2> Sorry, no books in DB.</h2>
+{% endif %}
+
+</body>
+</html>

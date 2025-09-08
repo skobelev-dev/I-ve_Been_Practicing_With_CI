@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Recipe
+    </title>
+    <link href="{{ url_for('static', path='style.css') }}" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<h1>Recipe:</h1>
+
+{% if recipe %}
+<table class="customTable">
+    <thead>
+    <tr>
+        <th>Tittle</th>
+        <th>Cooking time</th>
+        <th>Ingredient list</th>
+        <th>Description</th>
+        <th>V</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            {{ recipe.tittle }}
+        </td>
+        <td>
+            {{ recipe.cooking_time }}
+        </td>
+        <td>
+            {{ recipe.ingredient_list }}
+        </td>
+        <td>
+            {{ recipe.description }}
+        </td>
+        <td>
+            {{ recipe.views }}
+        </td>
+    </tr>
+    </tbody>
+</table>
+{% else %}
+<h2> Sorry, no that recipe in DB.</h2>
+{% endif %}
+
+</body>
+</html>

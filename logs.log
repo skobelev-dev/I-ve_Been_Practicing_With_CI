@@ -1,0 +1,19 @@
+2025-08-24T00:39:17.011504+0300 INFO Первый рецепт id: string
+2025-08-24T00:40:46.525341+0300 INFO Первый рецепт id: string | string
+2025-08-24T11:47:52.824454+0300 WARNING {'detail': 'Not Found'}
+2025-08-24T11:49:04.716218+0300 INFO {'tittle': 'string', 'cooking_time': datetime.time(8, 42, 0, 12000, tzinfo=TzInfo(UTC)), 'ingredient_list': 'string', 'description': 'string'}
+2025-08-24T11:49:04.731695+0300 ERROR <models.Recipe object at 0x000001C2F00B2510>
+NoneType: None
+2025-08-24T11:49:04.735261+0300 WARNING {'tittle': 'string', 'cooking_time': '08:42:00.012000Z', 'ingredient_list': ['string'], 'description': 'string'}
+2025-08-24T11:51:14.688018+0300 INFO {'tittle': 'string', 'cooking_time': datetime.time(8, 42, 0, 12000, tzinfo=TzInfo(UTC)), 'ingredient_list': 'string', 'description': 'string'}
+2025-08-24T11:51:14.702776+0300 ERROR <models.Recipe object at 0x0000020397202510>
+NoneType: None
+2025-08-24T11:51:14.705431+0300 WARNING {'tittle': 'string', 'cooking_time': '08:42:00.012000Z', 'ingredient_list': ['string'], 'description': 'string'}
+2025-08-24T11:51:26.031941+0300 INFO {'tittle': 'string', 'cooking_time': datetime.time(8, 42, 0, 12000, tzinfo=TzInfo(UTC)), 'ingredient_list': 'string', 'description': 'string'}
+2025-08-24T11:51:26.051177+0300 ERROR <models.Recipe object at 0x000001EC151F2510>
+NoneType: None
+2025-08-24T11:51:26.053856+0300 WARNING {'tittle': 'string', 'cooking_time': '08:42:00.012000Z', 'ingredient_list': ['string'], 'description': 'string'}
+2025-08-24T11:52:24.771037+0300 INFO {'tittle': 'some tittle', 'cooking_time': datetime.time(8, 42), 'ingredient_list': 'meat', 'description': 'cook it'}
+2025-08-24T11:52:24.791627+0300 ERROR <models.Recipe object at 0x000001B450C82510>
+NoneType: None
+2025-08-24T11:52:24.794779+0300 WARNING {'tittle': 'some tittle', 'cooking_time': '08:42:00', 'ingredient_list': ['meat'], 'description': 'cook it'}
