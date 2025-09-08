@@ -22,7 +22,7 @@ test:
     - main_tag
 
   script:
-    - pytest test_main
+    - python -m pytest test_main
 
 isort:
   tags:
