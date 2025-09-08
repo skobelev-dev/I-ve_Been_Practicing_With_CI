@@ -4,4 +4,4 @@ import random
 
 
 def sum:
-    print('sum')
+    print('suma')
